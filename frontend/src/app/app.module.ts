@@ -23,6 +23,7 @@ import { fakeBackendProvider } from './service';
 import { MockBackend, MockConnection } from '@angular/http/testing';
 import { BaseRequestOptions } from '@angular/http';
 import { ClientInfo2Component } from './components/client-info2/client-info2.component';
+import { RegisterComponent } from './register/register.component';
 
 
 
@@ -30,7 +31,8 @@ import { ClientInfo2Component } from './components/client-info2/client-info2.com
   declarations: [
     AppComponent,
     HomeComponent,
-    ClientInfo2Component
+    ClientInfo2Component,
+    RegisterComponent
   ],
   imports: [
     AppRoutingModule,

@@ -6,5 +6,6 @@ router.get('/', cartiere.list);
 router.get('/:id', cartiere.findById);
 router.post('/', cartiere.create);
 router.update('/', cartiere.update);
+router.delete('/:id'. cartiere.delete);
 
 module.exports = router;
