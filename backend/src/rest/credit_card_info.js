@@ -6,5 +6,6 @@ router.get('/', credit_card_info.list);
 router.get('/:id', credit_card_info.findById);
 router.post('/', credit_card_info.create);
 router.update('/', credit_card_info.update);
+router.delete('/:id'. client_card_info.delete);
 
 module.exports = router;

@@ -6,5 +6,6 @@ router.get('/', registered_addresses.list);
 router.get('/:id', registered_addresses.findById);
 router.post('/', registered_addresses.create);
 router.update('/', registered_addresses.update);
+router.delete('/:id'. registered_addresses.delete);
 
 module.exports = router;
