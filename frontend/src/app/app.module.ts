@@ -28,6 +28,7 @@ import { RegisterComponent } from './register/register.component';
 
 import { LoginComponent } from './login/login.component';
 import { LoginFormComponent } from './login/login-form/login-form.component';
+import { AddAdrCrdComponent } from './add-adr-crd/add-adr-crd.component';
 
 
 
@@ -38,10 +39,11 @@ import { LoginFormComponent } from './login/login-form/login-form.component';
     HomeComponent,
     ClientInfo2Component,
 
-    RegisterComponent
+    RegisterComponent,
 
     LoginComponent,
     LoginFormComponent,
+    AddAdrCrdComponent,
 
 
   ],
