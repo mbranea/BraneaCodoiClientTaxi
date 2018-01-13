@@ -8,6 +8,7 @@ import { ClientInfo2Component } from './components/client-info2/client-info2.com
 
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { MainWindowComponent } from './main-window/main-window.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -17,11 +18,10 @@ const routes: Routes = [
     {path: 'client_info', component: ClientInfo2Component
   },
 
- 
-
   {path: 'login', component: LoginComponent
   },
   {path:'register', component: RegisterComponent},
+  {path:'main', component: MainWindowComponent},
 
   
 ];
