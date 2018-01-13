@@ -32,6 +32,8 @@ import { LoginFormComponent } from './login/login-form/login-form.component';
 import { MainWindowComponent } from './main-window/main-window.component';
 
 import { AddAdrCrdComponent } from './add-adr-crd/add-adr-crd.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 
@@ -51,6 +53,10 @@ import { AddAdrCrdComponent } from './add-adr-crd/add-adr-crd.component';
     MainWindowComponent,
 
     AddAdrCrdComponent,
+
+    AboutComponent,
+
+    ContactComponent,
 
 
 

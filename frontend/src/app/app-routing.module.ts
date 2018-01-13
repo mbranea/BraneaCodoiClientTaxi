@@ -12,6 +12,8 @@ import { RegisterComponent } from './register/register.component';
 import { MainWindowComponent } from './main-window/main-window.component';
 
 import { AddAdrCrdComponent } from './add-adr-crd/add-adr-crd.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 const routes: Routes = [
@@ -29,6 +31,8 @@ const routes: Routes = [
   },
   {path:'register', component: RegisterComponent},
   {path:'main', component: MainWindowComponent},
+  {path:'about', component: AboutComponent},
+  {path:'contact', component: ContactComponent},
 
   
 
