@@ -8,7 +8,11 @@ import { ClientInfo2Component } from './components/client-info2/client-info2.com
 
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+
+import { MainWindowComponent } from './main-window/main-window.component';
+
 import { AddAdrCrdComponent } from './add-adr-crd/add-adr-crd.component';
+
 
 const routes: Routes = [
   { 
@@ -19,6 +23,15 @@ const routes: Routes = [
   {
     path: 'client_info', component: ClientInfo2Component
   },
+
+
+  {path: 'login', component: LoginComponent
+  },
+  {path:'register', component: RegisterComponent},
+  {path:'main', component: MainWindowComponent},
+
+  
+
   {
     path: 'add-adr-crd', component: AddAdrCrdComponent 
   },
@@ -28,6 +41,7 @@ const routes: Routes = [
   {
     path:'register', component: RegisterComponent
   },
+
 ];
 
 @NgModule({
