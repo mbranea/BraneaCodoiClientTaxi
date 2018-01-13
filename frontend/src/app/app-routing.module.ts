@@ -8,15 +8,22 @@ import { ClientInfo2Component } from './components/client-info2/client-info2.com
 
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+
 import { MainWindowComponent } from './main-window/main-window.component';
 
+import { AddAdrCrdComponent } from './add-adr-crd/add-adr-crd.component';
+
+
 const routes: Routes = [
-  { path: '', redirectTo: 'login', pathMatch: 'full' },
+  { 
+    path: '', redirectTo: 'login', pathMatch: 'full' },
   {
     path: 'home', component: HomeComponent
-    },
-    {path: 'client_info', component: ClientInfo2Component
+  },  
+  {
+    path: 'client_info', component: ClientInfo2Component
   },
+
 
   {path: 'login', component: LoginComponent
   },
@@ -24,6 +31,17 @@ const routes: Routes = [
   {path:'main', component: MainWindowComponent},
 
   
+
+  {
+    path: 'add-adr-crd', component: AddAdrCrdComponent 
+  },
+  {
+    path: 'login', component: LoginComponent
+  },
+  {
+    path:'register', component: RegisterComponent
+  },
+
 ];
 
 @NgModule({

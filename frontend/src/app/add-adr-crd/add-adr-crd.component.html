@@ -1,0 +1,38 @@
+<div class="topnav">
+  <a href="about">About us</a>
+  <a  href="contact">Contact</a>
+ 
+</div>
+
+<form action="action_page.php" style="border:1px solid #ccc">
+<div class="container">
+  <div id="address">
+  <h2>Create Address</h2>
+  <p>Add another address and its details below</p>
+  <hr>
+  <input type="text" placeholder="Address" name="Address name" required>
+  <input type="text" placeholder="City" name="City" required>
+  <input type="text" placeholder="Area" name="Area" required>
+  <input type="text" placeholder="Street" name="Street name" required>
+  <button type="submit" class="adrbutton">Register Address</button>
+  </div>
+
+  <div id="creditcard">
+    <h2>Create Credit Card</h2>
+    <p>Add another credit card and its details below</p>
+    <hr>
+    <input type="text" placeholder="Card number" name="Card number" required>
+    <input type="text" placeholder="Expiration date: mm/yy" name="Expiration date" required>
+    <button type="submit" class="crdbutton">Register Credit Card</button>
+  </div>
+
+
+
+</div>
+
+<div id="backbtn">  
+    <button routerLink="/main">
+    Back
+  </button></div>
+  
+</form>

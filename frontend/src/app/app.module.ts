@@ -28,7 +28,11 @@ import { RegisterComponent } from './register/register.component';
 
 import { LoginComponent } from './login/login.component';
 import { LoginFormComponent } from './login/login-form/login-form.component';
+
 import { MainWindowComponent } from './main-window/main-window.component';
+
+import { AddAdrCrdComponent } from './add-adr-crd/add-adr-crd.component';
+
 
 
 
@@ -43,7 +47,11 @@ import { MainWindowComponent } from './main-window/main-window.component';
 
     LoginComponent,
     LoginFormComponent,
+
     MainWindowComponent,
+
+    AddAdrCrdComponent,
+
 
 
   ],
