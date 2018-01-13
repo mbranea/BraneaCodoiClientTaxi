@@ -1,3 +1,5 @@
+import {RouterModule,Routes} from '@angular/router';
+
 // CORE
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
@@ -20,11 +22,15 @@ import { HomeComponent } from './components';
 import { fakeBackendProvider } from './service';
 import { MockBackend, MockConnection } from '@angular/http/testing';
 import { BaseRequestOptions } from '@angular/http';
+import { ClientInfo2Component } from './components/client-info2/client-info2.component';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    ClientInfo2Component
   ],
   imports: [
     AppRoutingModule,

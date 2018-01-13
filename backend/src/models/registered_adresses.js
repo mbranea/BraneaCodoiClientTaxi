@@ -1,10 +1,10 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
   var registered_adresses = sequelize.define('registered_adresses', {
-    id_cartier: DataTypes.INT,
-    id_oras: DataTypes.INT,
+    cartier: DataTypes.STRING,
+    oras: DataTypes.STRING,
     adress_name: DataTypes.STRING,
-    street_nr: DataTypes.INT,
+    street_name: DataTypes.STRING,
     adress_type: DataTypes.STRING
   }, {
     classMethods: {
