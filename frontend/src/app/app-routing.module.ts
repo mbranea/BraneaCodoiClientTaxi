@@ -12,6 +12,7 @@ import { RegisterComponent } from './register/register.component';
 import { MainWindowComponent } from './main-window/main-window.component';
 
 import { AddAdrCrdComponent } from './add-adr-crd/add-adr-crd.component';
+import { EditComponent } from './edit/edit.component';
 
 
 const routes: Routes = [
@@ -41,6 +42,9 @@ const routes: Routes = [
   {
     path:'register', component: RegisterComponent
   },
+  {
+    path:'edit', component: EditComponent
+  }
 
 ];
 
