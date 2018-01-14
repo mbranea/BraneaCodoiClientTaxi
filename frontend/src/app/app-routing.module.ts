@@ -39,7 +39,7 @@ const routes: Routes = [
   {path:'contact', component: ContactComponent},
   {path:'view', component: ViewOrdersComponent},
   {path:'api', component: ApiService},
-  
+  {path:'edit', component:EditComponent},
 
   {
     path: 'add-adr-crd', component: AddAdrCrdComponent 

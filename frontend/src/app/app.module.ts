@@ -68,12 +68,11 @@ import { EditComponent } from './edit/edit.component';
 
     ContactComponent,
 
-<<<<<<< HEAD
+
     ViewOrdersComponent,
-=======
+
     EditComponent,
 
->>>>>>> d01fd6c675eca64ea4c91a6ec44204f440ab584f
 
 
 
