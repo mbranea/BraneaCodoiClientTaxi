@@ -16,7 +16,6 @@ import { AppRoutingModule } from './app-routing.module';
 
 // Components
 import { AppComponent } from './app.component';
-import { HomeComponent } from './components';
 
 // used to create fake backend
 import { fakeBackendProvider } from './service';
@@ -37,6 +36,7 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 
 import { EditComponent } from './edit/edit.component';
+import { DataTableModule } from 'primeng/primeng';
 
 
 
@@ -46,7 +46,6 @@ import { EditComponent } from './edit/edit.component';
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
     ClientInfo2Component,
 
     RegisterComponent,
@@ -69,6 +68,7 @@ import { EditComponent } from './edit/edit.component';
 
   ],
   imports: [
+    DataTableModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     BrowserModule,
