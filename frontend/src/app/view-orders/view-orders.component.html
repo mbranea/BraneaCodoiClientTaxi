@@ -1,0 +1,10 @@
+<p-dataTable  [value]="orders" [(selection)]="selectedOrder" dataKey="id" [responsive]="true" [editable]="true">
+  
+    <p-column selectionMode="single"></p-column>
+    <p-column field="id" header = "id" [sortable]="true"></p-column>
+    <p-column field="orgin" header="Origin id" [sortable]="true"></p-column>
+    <p-column field="duetime" header="Due Time" [sortable]="true"></p-column>
+
+  </p-dataTable>
+  
+  <p-contextMenu   [model]="items">  </p-contextMenu>
