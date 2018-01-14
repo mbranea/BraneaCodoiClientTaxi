@@ -1,0 +1,37 @@
+<div class="topnav">
+    <a href="about">About us</a>
+    <a  href="contact">Contact</a> 
+</div>
+  
+
+<form action="action_page.php" style="border:1px solid #ccc">
+        <div class="container">
+          <h1>Edit Account</h1>
+          <p>Fill out the field below, if need be.</p>
+          <hr>
+    
+          <input type="text" placeholder="First name" name="Firstname" required>
+          <input type="text" placeholder="Last name" name="Lastname" required>
+          <input type="text" placeholder="Email" name="Email" required>
+          <input type="text" placeholder="Phone" name="Phone" required>
+
+          <div class="dropdown">
+              <button class="dropbtn">Display ongoing orders</button>
+              <div class="dropdown-content">
+                <a>Address 1<button class="remove">X</button></a>
+                <a>Address 2<button class="remove">X</button></a>
+                <a>Address 3<button class="remove">X</button></a>
+              </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn">Display completed orders</button>
+                <div class="dropdown-content">
+                  <a>Address 1 </a>
+                  <a>Address 2</a>
+                  <a>Address 3</a>
+                </div>
+              </div>
+
+        </div>
+</form>
