@@ -49,10 +49,11 @@ import { EditComponent } from './edit/edit.component';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
-   
+
     ClientInfo2Component,
 
     RegisterComponent,
@@ -78,6 +79,9 @@ import { EditComponent } from './edit/edit.component';
 
   ],
   imports: [
+
+    DataTableModule,
+
 AppRoutingModule,
     
     // Prime
@@ -89,6 +93,7 @@ AppRoutingModule,
     ButtonModule,
     InputTextModule,
     ContextMenuModule,
+
     AppRoutingModule,
     BrowserAnimationsModule,
     BrowserModule,

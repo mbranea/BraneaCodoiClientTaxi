@@ -16,22 +16,30 @@
           <input type="text" placeholder="Phone" name="Phone" required>
 
           <div class="dropdown">
-              <button class="dropbtn">Display ongoing orders</button>
+              <button class="dropbtn">Display all my addresses</button>
               <div class="dropdown-content">
-                <a>Address 1<button class="remove">X</button></a>
-                <a>Address 2<button class="remove">X</button></a>
-                <a>Address 3<button class="remove">X</button></a>
+                <a>Address 1<button class="remove">Remove</button></a>
+                <a>Address 2<button class="remove">Remove</button></a>
+                <a>Address 3<button class="remove">Remove</button></a>
               </div>
             </div>
 
             <div class="dropdown">
-                <button class="dropbtn">Display completed orders</button>
-                <div class="dropdown-content">
-                  <a>Address 1 </a>
-                  <a>Address 2</a>
-                  <a>Address 3</a>
-                </div>
+              <button class="dropbtn">Display all my credit cards</button>
+              <div class="dropdown-content">
+                <a>Address 1<button class="remove">Remove</button></a>
+                <a>Address 2<button class="remove">Remove</button></a>
+                <a>Address 3<button class="remove">Remove</button></a>
               </div>
-
+            </div>
+            
+            
+          
+           <div class="buttons">
+            <button class=backbtn routerLink="/main">Back</button>
+            <button class="applybtn">Apply</button>
+            <button class="addbtn" routerLink="/add-adr-crd">Register new Address/Card</button>
+          </div>
+        
         </div>
 </form>

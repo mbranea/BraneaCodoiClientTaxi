@@ -24,8 +24,11 @@ import { EditComponent } from './edit/edit.component';
 
 const routes: Routes = [
   { 
+
+
     path: '', redirectTo: 'login', pathMatch: 'full' },
     
+
   {
     path: 'client_info', component: ClientInfo2Component
   },
