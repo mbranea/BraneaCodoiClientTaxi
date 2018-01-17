@@ -9,14 +9,14 @@ import * as $ from "jquery";
   styleUrls: ['./view-orders.component.less']
 })
 export class ViewOrdersComponent implements OnInit {
-  orders: Order[];
+  ongoingorders: Order[];
   selectedOrder: Order;
   items: MenuItem[];
   constructor(private apiService: ApiService) { }
 
   ngOnInit() {
-    this.apiService.get('Order/').subscribe(res => {
-      this.orders = res;
+    this.apiService.get('api/order/').subscribe(res => {
+      this.ongoingorders = res;
     });
     this.items = [
       { label: 'View', icon: 'fa-search', command: (event) => this.viewOrder(this.selectedOrder) },
@@ -38,7 +38,7 @@ export class ViewOrdersComponent implements OnInit {
 export interface Order {
   id: number,
   origin:string,
-  duetime:string,
+  due_time:string,
 }
 
 

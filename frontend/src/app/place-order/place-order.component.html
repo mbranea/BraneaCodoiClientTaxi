@@ -8,29 +8,31 @@
       
   <div class="tabele">
     <h3 class="text">Saved Addresses</h3>
-    <p-dataTable  class="tab" [value]="orders" [(selection)]="selectedOrder" dataKey="id" [responsive]="true" [editable]="true">
+    <p-dataTable  class="tab" [value]="Adresses" [(selection)]="selectedAdress" dataKey="id" [responsive]="true" [editable]="true">
         <p-column selectionMode="single"></p-column>
         <p-column field="id" header = "id" [sortable]="true"></p-column>
-        <p-column field="orgin" header="Origin id" [sortable]="true"></p-column>
-        <p-column field="duetime" header="Due Time" [sortable]="true"></p-column>
+        <p-column field="adress_name" header="Adress Name" [sortable]="true"></p-column>
+        <p-column field="oras" header="City" [sortable]="true"></p-column>
+        <p-column field="cartier" header="Area" [sortable]="true"></p-column>
+        <p-column field="street_name" header="Street" [sortable]="true"></p-column>
         <ng-template pTemplate="emptymessage">
-            This fucking table is empty.
+            This table is empty.
         </ng-template>
       </p-dataTable>
       
       <div class=time>
       <h3>In how many minutes should the car arrive?</h3>
-      <input class=text id="input" type="text" size="30" pInputText [(ngModel)]="text"><br> 
-      <span id="text">The car will arrive in aproximately {{text}} minutes.</span>
+      <input class=text id="input" type="text" size="30" pInputText [(ngModel)]="duetime"><br> 
+      <span id="text" >The car will arrive in aproximately {{text}} minutes.</span>
     </div>
 
     
       
-    <button class="addbtn" routerLink="/add-adr-crd">Register new Address/Card</button>
-    <button class="placebtn">Check out</button>
+    <button class="addbtn" routerLink="/add-adr-crd">Register new Address</button>
+    <button class="placebtn"(click)="registerOrder(duetime)">Check out</button>
     <button class=backbtn routerLink="/main">Back</button>
 
-    <!-- <p-listbox class=listb [options]="cities" [(ngModel)]="selectedCity" [style]="{'width':'200px'}" optionLabel="name"></p-listbox> -->
+   
 
    
 

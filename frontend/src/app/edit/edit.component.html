@@ -10,14 +10,14 @@
           <p>Fill out the field below, if need be.</p>
           <hr>
     
-          <input type="text" placeholder="First name" name="Firstname" required>
-          <input type="text" placeholder="Last name" name="Lastname" required>
-          <input type="text" placeholder="Email" name="Email" required>
-          <input type="text" placeholder="Phone" name="Phone" required>
+          <input type="text" placeholder="First name" name="Firstname" [(ngModel)]="firstName" required>
+          <input type="text" placeholder="Last name" name="Lastname" [(ngModel)]="lastname" required>
+          <input type="text" placeholder="Email" name="Email" [(ngModel)]="email" required>
+          <input type="text" placeholder="Phone" name="Phone" [(ngModel)]="phone" required>
           
            <div class="buttons">
             <button class=backbtn routerLink="/main">Back</button>
-            <button class="applybtn">Apply</button>
+            <button class="applybtn"(click)="applyChanges(lastName,firstName,email,phone)">Apply</button>
             <button class="addbtn" routerLink="/add-adr-crd">Register new Address/Card</button>
           </div>
         
