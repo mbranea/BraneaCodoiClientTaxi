@@ -1,0 +1,35 @@
+<div class="topnav">
+  <a href="about">About us</a>
+  <a  href="contact">Contact</a>
+ 
+</div>
+
+<div class="tabele">
+<h3 class="text">Ongoing orders</h3>
+<p-dataTable  class="tab" [value]="orders" [(selection)]="selectedOrder" dataKey="id" [responsive]="true" [editable]="true">
+    <p-column selectionMode="single"></p-column>
+    <p-column field="id" header = "id" [sortable]="true"></p-column>
+    <p-column field="orgin" header="Origin id" [sortable]="true"></p-column>
+    <p-column field="duetime" header="Due Time" [sortable]="true"></p-column>
+    <ng-template pTemplate="emptymessage">
+        This fucking table is empty.
+    </ng-template>
+  </p-dataTable>
+  
+  <p-contextMenu   [model]="items">  </p-contextMenu>
+
+  <h3 class="text">Completed orders</h3>
+  <p-dataTable  class="tab" [value]="orders" [(selection)]="selectedOrder" dataKey="id" [responsive]="true" [editable]="true">
+    <p-column selectionMode="single"></p-column>
+    <p-column field="id" header = "id" [sortable]="true"></p-column>
+    <p-column field="orgin" header="Origin id" [sortable]="true"></p-column>
+    <p-column field="duetime" header="Due Time" [sortable]="true"></p-column>
+    <ng-template pTemplate="emptymessage">
+        This fucking table is empty.
+    </ng-template>
+
+  </p-dataTable>  
+  <p-contextMenu   [model]="items">  </p-contextMenu>
+</div>
+
+<button routerLink="/main" type="button" class="cancelbtn">Back</button>
