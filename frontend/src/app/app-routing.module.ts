@@ -15,10 +15,13 @@ import { AddAdrCrdComponent } from './add-adr-crd/add-adr-crd.component';
 
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
-import { ViewOrdersComponent } from './components/pages/view-orders/view-orders.component';
+import { ViewOrdersComponent } from './view-orders/view-orders.component';
 import { ApiService } from './service/index';
 
 import { EditComponent } from './edit/edit.component';
+import { PlaceOrderComponent } from './place-order/place-order.component';
+import {ListboxModule} from 'primeng/primeng';
+
 
 
 
@@ -43,6 +46,7 @@ const routes: Routes = [
   {path:'orderView', component: ViewOrdersComponent},
   {path:'api', component: ApiService},
   {path:'edit', component:EditComponent},
+  {path: 'placeOrder', component: PlaceOrderComponent},
 
   {
     path: 'add-adr-crd', component: AddAdrCrdComponent 

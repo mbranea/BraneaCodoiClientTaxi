@@ -35,14 +35,17 @@ import { AddAdrCrdComponent } from './add-adr-crd/add-adr-crd.component';
 
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
-import { ViewOrdersComponent } from './components/pages/view-orders/view-orders.component';
+import { ViewOrdersComponent } from './view-orders/view-orders.component';
 import { DataTableModule, SharedModule, CalendarModule,
   ButtonModule,
   InputTextModule,
-  ContextMenuModule } from 'primeng/primeng';
+  ContextMenuModule, 
+  ListboxModule,
+  SelectItem} from 'primeng/primeng';
 
 
 import { EditComponent } from './edit/edit.component';
+import { PlaceOrderComponent } from './place-order/place-order.component';
 
 
 
@@ -74,30 +77,38 @@ import { EditComponent } from './edit/edit.component';
 
     EditComponent,
 
+    PlaceOrderComponent,
+
 
 
 
   ],
   imports: [
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    BrowserModule,
-    FormsModule,
-    HttpModule,
-    ReactiveFormsModule,
-    SuiModule,
-   
+
+    DataTableModule,
+
+AppRoutingModule,
+    
     // Prime
     DataTableModule,
     SharedModule,
     FormsModule,
     DataTableModule,
+    ListboxModule,
     CalendarModule,
     ButtonModule,
     InputTextModule,
     ContextMenuModule,
+    ListboxModule,
 
-  
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    BrowserModule,
+    BrowserModule,
+    FormsModule,
+    HttpModule,
+    ReactiveFormsModule,
+    SuiModule,
   ],
   providers: [
     AppRoutingModule,

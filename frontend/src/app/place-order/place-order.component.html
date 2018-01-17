@@ -1,0 +1,36 @@
+   <div class="topnav">
+        <a href="about">About us</a>
+        <a  href="contact">Contact</a>
+       
+      </div>
+
+     
+      
+  <div class="tabele">
+    <h3 class="text">Saved Addresses</h3>
+    <p-dataTable  class="tab" [value]="orders" [(selection)]="selectedOrder" dataKey="id" [responsive]="true" [editable]="true">
+        <p-column selectionMode="single"></p-column>
+        <p-column field="id" header = "id" [sortable]="true"></p-column>
+        <p-column field="orgin" header="Origin id" [sortable]="true"></p-column>
+        <p-column field="duetime" header="Due Time" [sortable]="true"></p-column>
+        <ng-template pTemplate="emptymessage">
+            This fucking table is empty.
+        </ng-template>
+      </p-dataTable>
+      
+      <div class=time>
+      <h3>In how many minutes should the car arrive?</h3>
+      <input class=text id="input" type="text" size="30" pInputText [(ngModel)]="text"><br> 
+      <span id="text">The car will arrive in aproximately {{text}} minutes.</span>
+    </div>
+
+    
+      
+    <button class="addbtn" routerLink="/add-adr-crd">Register new Address/Card</button>
+    <button class="placebtn">Check out</button>
+    <button class=backbtn routerLink="/main">Back</button>
+
+    <!-- <p-listbox class=listb [options]="cities" [(ngModel)]="selectedCity" [style]="{'width':'200px'}" optionLabel="name"></p-listbox> -->
+
+   
+
