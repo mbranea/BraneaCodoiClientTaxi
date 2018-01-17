@@ -5,7 +5,7 @@ var client_info = require('../service/').client_info;
 router.get('/', client_info.list);
 router.get('/:id', client_info.findById);
 router.post('/', client_info.create);
-router.update('/', client_info.update);
-router.delete('/:id'. client_info.delete);
+router.put('/', client_info.update);
+
 
 module.exports = router;
