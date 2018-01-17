@@ -9,26 +9,26 @@
       <h1>Register Account</h1>
       <p>Please fill out the fields below.</p>
       <hr>
+      <input type="text" placeholder="Username" name="Username" required pInputText [(ngModel)]="username">
 
-      <input type="text" placeholder="Username" name="Username" required>
-
-      <input type="password" placeholder="Password" name="psw" required>
+      <input type="password" placeholder="Password" name="psw" required [(ngModel)]="password">
 
       <input type="password" placeholder="Password confirmation" name="psw-repeat" required>
 
-      <input type="text" placeholder=" First name" name="FName" required>
+      <input type="text" placeholder=" First name" name="FName" required [(ngModel)]="firstName">
 
-      <input type="text" placeholder="Last name" name="LName" required>
+      <input type="text" placeholder="Last name" name="LName" required [(ngModel)]="lastName">
 
-      <input type="text" placeholder=" Phone number" name="Phone" required>
+      <input type="text" placeholder=" Phone number" name="Phone" required [(ngModel)]="phoneNumber">
 
-      <input type="text" placeholder="Email" name="Email" required>
+      <input type="text" placeholder="Email" name="Email" required [(ngModel)]="eMail">
   
       
   
       <div class="clearfix">
         <button routerLink="/login" type="button" class="cancelbtn">Back</button>
-        <button type="submit" class="signupbtn">Register</button>
+     
+        <button type="submit" class="signupbtn" (click)="registerAccount(username,password,lastName,firstName,phoneNumber,eMail)">Register</button>
       </div>
     </div>
   </form>

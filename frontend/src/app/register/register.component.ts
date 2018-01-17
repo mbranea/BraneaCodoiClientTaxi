@@ -1,6 +1,6 @@
 
   import { Component, OnInit } from '@angular/core';
-  
+  import { Router, ActivatedRoute, Params } from '@angular/router';
   import { ApiService } from '../service/';
    @Component({
      selector: 'app-register',
@@ -10,7 +10,7 @@
    export class RegisterComponent implements OnInit {
    
     
-    constructor(private apiService: ApiService) { }
+    constructor(private apiService: ApiService,private router:Router) { }
    
      ngOnInit() {
      }
@@ -24,6 +24,7 @@
   
       this.registerData(username,password);
       this.registerInfo(lastName,firstName,phoneNumber,eMail);
+      (this.router.navigate(['/', 'login']))
   
   
   
