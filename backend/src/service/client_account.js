@@ -18,6 +18,12 @@ exports.findById = function (req, res) {
     res.jsonp(client_account);
   });
 };
+exports.findAccount = function (req, res) {
+  let username = req.params.username;
+  client_account.findAccount(username).then(client_account => {
+    res.jsonp(client_account);
+  });
+};
 
 exports.delete = function (req, res) {
   let id = req.params.id;

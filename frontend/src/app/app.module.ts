@@ -35,7 +35,7 @@ import { AddAdrCrdComponent } from './add-adr-crd/add-adr-crd.component';
 
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
-import { ViewOrdersComponent } from './view-orders/view-orders.component';
+import { ViewOrdersComponent } from './components/pages/view-orders/view-orders.component';
 import { DataTableModule, SharedModule, CalendarModule,
   ButtonModule,
   InputTextModule,
@@ -79,11 +79,14 @@ import { EditComponent } from './edit/edit.component';
 
   ],
   imports: [
-
-    DataTableModule,
-
-AppRoutingModule,
-    
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    BrowserModule,
+    FormsModule,
+    HttpModule,
+    ReactiveFormsModule,
+    SuiModule,
+   
     // Prime
     DataTableModule,
     SharedModule,
@@ -94,14 +97,7 @@ AppRoutingModule,
     InputTextModule,
     ContextMenuModule,
 
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    BrowserModule,
-    BrowserModule,
-    FormsModule,
-    HttpModule,
-    ReactiveFormsModule,
-    SuiModule,
+  
   ],
   providers: [
     AppRoutingModule,

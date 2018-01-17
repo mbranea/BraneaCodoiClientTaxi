@@ -15,7 +15,7 @@ import { AddAdrCrdComponent } from './add-adr-crd/add-adr-crd.component';
 
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
-import { ViewOrdersComponent } from './view-orders/view-orders.component';
+import { ViewOrdersComponent } from './components/pages/view-orders/view-orders.component';
 import { ApiService } from './service/index';
 
 import { EditComponent } from './edit/edit.component';
@@ -40,7 +40,7 @@ const routes: Routes = [
   {path:'main', component: MainWindowComponent},
   {path:'about', component: AboutComponent},
   {path:'contact', component: ContactComponent},
-  {path:'view', component: ViewOrdersComponent},
+  {path:'orderView', component: ViewOrdersComponent},
   {path:'api', component: ApiService},
   {path:'edit', component:EditComponent},
 
